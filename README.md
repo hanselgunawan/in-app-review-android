@@ -12,4 +12,4 @@
   * For Unit Testing only. It doesn't simulate UI. 
 
 ## Demo
-<img src="https://user-images.githubusercontent.com/10084360/158725675-799207ab-3d73-403f-85b8-f428d11e133f.png" width="225px" height="400px" />
+<img src="https://user-images.githubusercontent.com/10084360/158725675-799207ab-3d73-403f-85b8-f428d11e133f.png" width="225px" height="400px" />           <img src="https://user-images.githubusercontent.com/10084360/158726005-f894124c-e36d-40f2-8da1-bfbf989700ec.png" width="225px" height="400px" />
