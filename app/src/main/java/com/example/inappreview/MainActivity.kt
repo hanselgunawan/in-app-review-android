@@ -13,7 +13,7 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
 
-    private lateinit var reviewInfo: ReviewInfo
+    private var reviewInfo: ReviewInfo? = null
     private lateinit var manager: ReviewManager
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -45,9 +45,11 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun startReviewFlow() {
-        val flow: Task<Void> = manager.launchReviewFlow(this, reviewInfo)
-        flow.addOnCompleteListener { task ->
-            Toast.makeText(this, "Rating is completed", Toast.LENGTH_SHORT).show()
+        if (reviewInfo != null) {
+            val flow: Task<Void> = manager.launchReviewFlow(this, reviewInfo!!)
+            flow.addOnCompleteListener { task ->
+                Toast.makeText(this, "Rating is completed", Toast.LENGTH_SHORT).show()
+            }
         }
     }
 }
